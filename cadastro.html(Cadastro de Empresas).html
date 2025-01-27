@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - TKV Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Empresa</h1>
+    </header>
+    <main>
+        <form id="cadastroForm" class="form">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="empresa">Nome da Empresa:</label>
+            <input type="text" id="empresa" name="empresa" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" name="cnpj" required>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            
+            <label for="faturamento">Faturamento Mensal:</label>
+            <select id="faturamento" name="faturamento">
+                <option value="100k+">Mais de 100 mil</option>
+                <option value="50-100k">Entre 50 e 100 mil</option>
+                <option value="menos50k">Menos de 50 mil</option>
+            </select>
+
+            <label for="indicacao">Como nos encontrou?</label>
+            <input type="text" id="indicacao" name="indicacao">
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
